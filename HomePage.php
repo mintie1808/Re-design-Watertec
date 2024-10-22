@@ -17,86 +17,10 @@
 
 <body>
     <div class="container-fluid">
-        <div class="w-76 mx-auto">
-            <div class="home-header">
-                <div class="navbar home-header-nav">
-                    <div class="header-logo"><img src="asset/img/logoWatertec.png" width="146.778px" height=" 59.161px"
-                            flex-shrink: 0 /></div>
-                    <div class="container-menu">
-                        <ul class="navbar menu">
-                            <li><span>Home</span></li>
-                            <li><span>About US</span></li>
-                            <li><span>Products</span></li>
-                            <li><span>News</span></li>
-                            <li><span>Contact</span></li>
-                        </ul>
-                    </div>
-                    <div class="language">
-                        <img src="asset/img/language.png" alt="" width="20px" height="20px">
-                        <select>
-                            <option value=""><span>EN</span></option>
-                            <option value=""><span>VI</span></option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="content-about">
-                <div class="container-heading">
-                    <div class="heading-about">
-                        <div class="text-about">ABOUT</div>
-                        <div class="text-watertec"><span class="text-water">WATER</span><span
-                                class="text-tec">TEC</span></div>
-                        <div class="text-subtitle">WATERTEC EXCLUSIVE DISTRIBUTOR IN VIETNAM</div>
-                    </div>
-                    <div class="info-about ">
-                        <div class="container-about-text">Watertec is the first Malaysian company to lead the way in
-                            inventing and manufacturing plastic valves, faucets & fittings in Asia. Watertec's plastic
-                            faucets are made of high quality processed plastic with a warranty of up to 10 years.
-                            Production output is more than 6 million units annually.<br /><br />
-                            Watertec products are present in ASEAN countries, the Middle East and Africa. Currently,
-                            Watertec is the largest manufacturer of valves, faucets and plastic accessories in the
-                            world. Phan Khang Home Company only specializes in providing high quality bathroom & kitchen
-                            equipment.</div>
-                        <div class="container-about-img">
-                            <img src="asset/img/background_about.png" width="457px" height="266px" />
-                            <div class="about-img">
-                                <ul class="container-about-img-detail">
-                                    <li> <img src="asset/img/about_detail1.png" alt="" width="108px" height="63px"></li>
-                                    <li> <img src="asset/img/about_detail2.png" alt="" width="108px" height="63px"></li>
-                                    <li> <img src="asset/img/about_detail3.png" alt="" width="108px" height="63px"></li>
-                                    <li> <img src="asset/img/about_detail4.png" alt="" width="108px" height="63px"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-about">
-                    <div class="footer-about-info-head d-flex justify-content-center align-items-center"><span
-                            style="margin-right: 10px;">Watertec is the </span> <span
-                            style="margin-right: 10px; color: #005498;">leading </span> <span> plastic valve, faucet &
-                            fittings market in:</span></div>
-                    <div class="footer-about-flag d-flex justify-content-center align-items-center">
-                        <ul>
-                            <li>
-                                <img src="asset/img/image 23.png" alt="" class="img-flag">
-                            </li>
-                            <li> <img src="asset/img/image 24.png" alt="" class="img-flag"></li>
-                            <li><img src="asset/img/image 25.png" alt="" class="img-flag"></li>
-                            <li><img src="asset/img/image 26.png" alt="" class="img-flag"></li>
-                            <li><img src="asset/img/image 27.png" alt="" class="img-flag"></li>
-                            <li><img src="asset/img/image 28.png" alt="" class="img-flag"></li>
-                            <li><img src="asset/img/image 29.png" alt="" class="img-flag"></li>
-                            <li><img src="asset/img/image 30.png" alt="" class="img-flag"></li>
-                            <li><img src="asset/img/image 31.png" alt="" class="img-flag"></li>
-                            <li><img src="asset/img/image 32.png" alt="" class="img-flag"></li>
-                            <li><img src="asset/img/image 33.png" alt="" class="img-flag"></li>
-                            <li><img src="asset/img/image 34.png" alt="" class="img-flag"></li>
-                        </ul>
-                    </div>
-                    <div class="footer-about-info-foot d-flex justify-content-center align-items-center"><span>and many
-                            more!</span></div>
-                </div>
-            </div>
+        <div class="mx-auto">
+            <?php include './component/component_header.php' ?>
+            <?php include './component/component_about.php' ?>
+
             <div class="home-content-product">
                 <div class="home-heading-product">
                     <span class="text-our">Our</span></br>
@@ -142,7 +66,7 @@
                 <div class="home-cont-slider-news">
                     <div class="home-slider-news">
                         <div class="home-news-details">
-                            
+
                         </div>
                     </div>
                     <div>
@@ -155,7 +79,80 @@
 
             </div>
             <div class="footer">
+                <div class="footer-content">
+                    <div class="footer-container-1">
+                        <h3>Brought to you buy</h3>
+                        <img src="asset/img/logoWatertec.png" alt="" width="260px" height="96px">
+                    </div>
+                    <div class="footer-container-2">
+                        <h3>Category</h3>
+                        <ul>
+                            <li><span>High Quality Line</span></li>
+                            <li><span>Specialised Line</span></li>
+                            <li><span>Universal Line</span></li>
+                            <li><span>Accessory</span></li>
+                        </ul>
+                    </div>
+                    <div class="footer-container-2">
+                        <h3>Need help?</h3>
+                        <ul>
+                            <li><span>FAQs</span></li>
+                            <li><span>Warranty Service</span></li>
 
+                        </ul>
+
+                    </div>
+                    <div class="footer-container-2">
+                        <h3> <img src="asset/img/icon_phone.png" alt="" width="24px" height="24px"> Contact Us
+                        </h3>
+                        <ul>
+                            <li>
+                                <span>(84) 02873-070-079</span>
+                            </li>
+                            <li>
+                                <span>(84) 90-6610-116</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-content-2">
+                    <div class="footer-container-3">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><span>Shop</span></li>
+                            <li><span>Promotions</span></li>
+                            <li><span>About Us</span></li>
+                            <li><span>Contact</span></li>
+                            <li><span>News</span></li>
+                            <li><span>Follow US</span></li>
+                        </ul>
+                        <img src="asset/img/icon_fb.png" alt="" width="24px" height="24px">
+                        <img src="asset/img/icon_zalo.png" alt="" width="24px" height="24px">
+                        <img src="asset/img/icon_ytb.png" alt="" width="24px" height="24px">
+                    </div>
+                    <div class="footer-container-3">
+                        <h3 ><img src="asset/img/icon_location.png" alt="" width="16px" height="23px">
+                            Visit us</h3>
+                        <div class="footer-container-cont">
+                            <h4>HCMC Office</h4>
+                            <span>32A Tan Thuan Nam Residential Area, Phu Thuan, District 7</span>
+                        </div>
+                        <div class="footer-container-cont">
+                            <h4>Warehouse</h4>
+                            <span>KM14, National Highway 1A, Ngoc Hoi, Thanh Tri, Hanoi</span>
+                        </div>
+                        <div class="footer-container-cont">
+                            <h4>Singapore Office</h4>
+                            <span>60 Paya Lebar Road #07-54 Singapore 409051</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="footer-cori">
+                    <span>Copyright © Phan Khang Co., Ltd</span>
+                </div>
             </div>
         </div>
     </div>
