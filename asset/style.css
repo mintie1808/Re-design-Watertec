@@ -23,6 +23,8 @@
   }
 
 
+
+  
 .container-fluid{
     width: 100%;
     height: 100%;
@@ -77,7 +79,7 @@
     }
 }
  .home-header-nav {
-    margin-left: 13%;
+    margin-left: 10%;
     padding-top: 19px;
     width: 80%; 
     height: 86px; 
@@ -138,9 +140,11 @@
 }  
 .heading-about{
     margin-bottom: 30px;
+    margin-left: 10%;
 }
 .info-about{
     display: flex;
+    margin-left: 10%;
 }
 .container-about-text{
     flex:1;
@@ -162,7 +166,7 @@
 
 }
 .container-heading{
-    padding: 50px;
+    padding: 50px 0;
 }
 .text-watertec{
     display: flex;
@@ -283,7 +287,7 @@
 }
 .footer-about-flag li{
     flex: 1;
-    margin-right: 24px;
+    margin-right: 15px;
 }
 .footer-about-flag li:last-child{
     margin-right: 0px;
@@ -304,7 +308,9 @@
     border-radius: 8px;
 }
 .home-content-product{
-    padding: 50px;
+    padding: 50px 0;    
+    width: 80%;
+    margin-left: 10%;
 }
 .text-our{  
     color: #005498;
@@ -365,7 +371,9 @@
 }
 
 .home-cont-text-news{
-    padding: 50px;
+    padding: 50px 0;
+    width: 80%;
+    margin-left: 10%;
 }
 
 .text-news{
@@ -379,3 +387,68 @@
     line-height: normal;
     letter-spacing: 3.12px; 
 } 
+
+.footer{
+    background: #00B7BF;
+    padding: 26px 0;
+
+}
+.footer ul{
+    list-style-type: none;
+}
+.footer-content{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+}
+.footer li{
+    margin-bottom: 10px;
+}
+.footer h3{
+    color: #FCFCFC;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+.footer span{
+    color: #FCFCFC;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer-container-1{
+    flex:3;
+}
+.footer-container-2{
+    flex:2;
+}
+.footer-cori{
+    text-align: center;
+}
+.footer-content-2 {
+    display: flex;
+    width: 35.56%;
+    margin-left: 54.44%;
+}
+
+.footer-container-3 {
+    flex: 1; 
+
+}
+.footer-container-cont{
+    margin-bottom: 15px;
+}
+.footer-container-cont h4{
+    color: #FCFCFC;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
