@@ -17,7 +17,7 @@
 
 <body>
     <div class="container-fluid">
-        <div class="w-80 mx-auto">
+        <div class="w-76 mx-auto">
             <div class="home-header">
                 <div class="navbar home-header-nav">
                     <div class="header-logo"><img src="asset/img/logoWatertec.png" width="146.778px" height=" 59.161px"
@@ -29,8 +29,6 @@
                             <li><span>Products</span></li>
                             <li><span>News</span></li>
                             <li><span>Contact</span></li>
-                            <li><span>Servicing & Support</span><img src="asset/img/down-arrow.png" width="25px"
-                                    height="25px" /></li>
                         </ul>
                     </div>
                     <div class="language">
