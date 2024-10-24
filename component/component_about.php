@@ -2,7 +2,7 @@
     <div class="content-about">
         <div class="container-heading">
             <div class="heading-about">
-                <div class="text-about">ABOUT</div>
+                <div class="text-about">About</div>
                 <div class="text-watertec"><span class="text-water">WATER</span><span class="text-tec">TEC</span></div>
                 <div class="text-subtitle">WATERTEC EXCLUSIVE DISTRIBUTOR IN VIETNAM</div>
             </div>
