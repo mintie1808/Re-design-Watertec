@@ -4,9 +4,9 @@
          include __DIR__ . '/../component/component_header.php';     
     ?>
     <?php 
-$current_page = 'about'; 
-include __DIR__ . '/../component/component_about.php'; 
-?>
+        $current_page = 'about'; 
+        include __DIR__ . '/../component/component_about.php'; 
+    ?>
 
     <div class="about-cocq">
         <div class="heading-cocq">
