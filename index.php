@@ -20,9 +20,10 @@
     <div class="container-fluid">
         <div class="mx-auto">
             <?php 
-               // include './page/homePage.php';
+            //    include './page/homePage.php';
                 // include './page/aboutPage.php';
-                include './page/detaiProductPage.php'
+                // include './page/productDetaiPage.php'
+                include './page/newsDetailPage.php'
             ?>
         </div>
     </div>

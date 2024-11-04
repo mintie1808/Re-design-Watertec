@@ -66,13 +66,13 @@
                             <div class="row-4 " >
                                 <a class="btn dropdown-toggle bg-white text-info" href="#" role="button"
                                     id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Red
+                                    aria-expanded="false" style="font-weight: 800;">
+                                    White
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <a class="dropdown-item" href="#">White</a>
                                     <a class="dropdown-item" href="#">Black</a>
-                                    <a class="dropdown-item" href="#">Red</a>
+                                    
                                 </div>
                             </div>
                             <div class="row-4 "><span>4 years</span></div>

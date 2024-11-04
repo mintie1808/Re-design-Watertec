@@ -682,3 +682,73 @@
      letter-spacing: 0.72px;
      word-wrap: break-word
 }
+.news-de-header{
+    width: 60%;
+    margin-left: 20%;
+    align-items: center;
+    text-align: center;
+}
+.news-de-header h3{
+    color: #005498;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1.92px;
+    word-wrap: break-word
+}
+.news-de-body{
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
+   
+}
+.text-news{
+    color: #1C1B1F;
+    font-size: 20px;
+   
+    font-weight: 400;
+    letter-spacing: 0.80px;
+    word-wrap: break-word
+}
+.news-de-daca {
+    color: #00B7BF;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.72px;
+    word-wrap: break-word;
+    padding: 0 20px; 
+    margin-left: 10%;
+}
+.news-de-body-header{
+    color: #005498;
+    font-size: 24px;
+
+    font-weight: 700;
+    letter-spacing: 0.96px;
+    word-wrap: break-word
+}
+.news-de-other-news-container{
+    width: 80%;
+    margin-left: 10%;
+}
+.other-news-body .text-compaigns{
+    color: #00B7BF;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.45px;
+    word-wrap: break-word
+}
+.text-news-title{
+    color: #005498;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.67px;
+    word-wrap: break-word
+}
+.text-news-date{
+    color: #1C1B1F;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    letter-spacing: 0.16px;
+    word-wrap: break-word
+}
