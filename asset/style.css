@@ -16,33 +16,19 @@
     padding: 0 !important;
 
 }
-/* .home-header{
-    width: 1280px;
-    height: 832px;
-    position: relative;
-    animation: slideBackgrounds 15s infinite;
+
+
+input::placeholder {
+    color: #00B7BF; 
+    opacity: 1; 
 }
-@keyframes slideBackgrounds {
-    0% {
-        background-image: url(img/backgroundHome.png);
-    }
-    33% {
-        background-image: url(img/logoWatertec.png);
-    }
-    66% {
-        background-image: url(img/logoWatertec.png);
-    }
-    100% {
-        background-image: url(img/backgroundHome.png);
-    }
-} */
 
 .home-header{
     width: 100%;
     height: 832px;
-    background-size: cover;  /* Ảnh bao phủ toàn bộ phần tử */
-    background-position: center; /* Căn giữa ảnh */
-    background-repeat: no-repeat; /* Không lặp lại ảnh */
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat;
     background-image: url(img/backgroundHome.png);
     align-items: center ;
     padding-top: 19px;
@@ -50,42 +36,60 @@
 }
 @media (max-width: 1300px) {
     .home-header {
-        height: 641px; /* Giảm chiều cao khi màn hình nhỏ */
+        height: 641px; 
     }
 }
 @media (max-width: 1000px) {
     .home-header {
-        height: 345px; /* Giảm chiều cao khi màn hình nhỏ */
+        height: 345px;
     }
 }
 
-@media (max-width: 700px ) { 
+@media (max-width: 768px ) { 
     .home-header {
-        height: 4px; /* Giảm chiều cao hơn nữa cho thiết bị di động */
+        height: 4px;
     }
 }
- .header-nav {
-    margin-left: 10%;
+.header-nav {
+    margin: auto;
     padding-top: 19px;
-    width: 80%; 
-    height: 86px; 
-    align-items: center; 
+    width: 80%;
+    min-height: 86px; 
     border-radius: 20px;
     background: rgba(0, 183, 191, 0.65);
-    border: 2px #FCFCFC solid;         
-    backdrop-filter: blur(120.8px); 
+    border: 2px #FCFCFC solid;
+    backdrop-filter: blur(120.8px);
 }
+@media (max-width: 768px) {
+    
+}
+
+
 .container-menu{
     align-items: center;
 }
+.container-menu a{
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 400;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 0.18px;
+    line-height: normal;  
 
-.navbar.menu a {
-    text-decoration: none; /* Remove underline */
-    color: #fff; /* Change color to white */
 }
-
-.navbar.menu a:hover {
-    color: #FCFCFC; /* Change color on hover */
+.navbar.menu a {
+    text-decoration: none; 
+    color: #fff; 
+}
+a.hover{
+    color: #FCFCFC;
+    font-weight: 600;   
+}
+.container-menu a:hover {
+    color: #FCFCFC;
 }
 
 .menu {
@@ -105,18 +109,25 @@
     align-items: center; 
     height: 100%; 
 }
-
-.menu li span {
-    color: #FCFCFC;
-    display: block;
-    font-size: 18px;
-    font-family: Inter;
-    font-weight: 400;
-    text-align: center;
-    font-style: normal;
-    letter-spacing: 0.18px;
-    line-height: normal;  
+.navbar-nav.container-menu {
+    flex-grow: 1;
+    justify-content: center; 
 }
+
+.navbar-nav.ms-auto {
+    display: flex;
+    align-items: center;
+}   
+.navbar-toggler {
+    border: 1px solid white;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+}
+
+
 .language select{
     border: none;
     background: none;
@@ -134,19 +145,15 @@
  
 }  
 .heading-about{
-    margin-bottom: 30px;
     margin-left: 10%;
 }
 .info-about{
-    display: flex;
-    margin-left: 10%;
+    width: 80% !important;
+    margin-left: 10% !important;
 }
-.container-about-text{
-    flex:1;
-    padding-right: 15px;
-}
+
 .container-about-img{
-    flex:1;
+
     align-items: center;
     justify-items: center;
 }
@@ -176,11 +183,24 @@
     font-weight: 900;
     line-height: normal;
     letter-spacing: 1.92px; 
-    color: transparent; /* Màu của chữ bên trong, có thể dùng transparent để chỉ hiện stroke */
-    -webkit-text-stroke-width: 2px; /* Độ dày của đường viền */
+    color: transparent; 
+    -webkit-text-stroke-width: 2px; 
     -webkit-text-stroke-color: #005498;
  
 }
+.text-latest{
+    font-size: 48px;
+  
+    font-style: italic;  
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.92px; 
+    color: transparent; 
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: #005498;
+}
+
+
 .text-water{
     color: #00ADEF;
 
@@ -232,13 +252,14 @@
 }
 .footer-about-info-head{
     width: 100%;
-    padding: 32px 0;
+    padding: 32px 0 16px;
 
 }
-.footer-about-info-head span{
+.footer-about-info-head p{
     color: #FCFCFC;
     text-align: center;
-
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     font-size: 22px;
     font-style: italic;
     font-weight: 700;
@@ -275,26 +296,47 @@
     height: 72px;
     
 }
-.footer-about-flag ul{
+.footer-about-flag ul {
     display: flex;
-    list-style-type: none; /* Bỏ gạch đầu dòng */
+    flex-wrap: wrap;
+    list-style-type: none;
     padding: 0;
     margin: 0;
-    align-items: center; 
+    justify-content: center;
 }
-.footer-about-flag li{
-    flex: 1;
-    margin-right: 25px;
+
+.footer-about-flag li {
+    flex: 1 1 25%; 
+    max-width: 72px;
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    .footer-about-flag li {
+        flex: 1 1 25%; 
+        max-width: 57px;
+    }
+    .footer-about-flag li:nth-child(n+5) {
+        display: none;
+    }
+   
 }
 .footer-about-flag li:last-child{
     margin-right: 0px;
 }   
+
 .home-container-product{
-    display: flex;
+  
     flex-wrap: wrap;
     justify-content: space-between;
 
 }
+
+
+
+
+
+
 .container-product{
     flex: 0 0 calc(33.33% - 15px); /* Mỗi sản phẩm chiếm 30% chiều rộng, cách đều nhau */
     margin-bottom: 20px; /* Khoảng cách giữa các hàng */
@@ -367,11 +409,7 @@
     border-radius: 80px 0px;
 }
 
-.home-cont-text-news{
-    padding: 50px 0;
-    width: 80%;
-    margin-left: 10%;
-}
+
 
 .text-news{
     display: flex;
@@ -383,6 +421,112 @@
     line-height: normal;
     letter-spacing: 3.12px; 
 } 
+.home-cont-text-news a{
+    font-size: 30px;
+}
+.home-slider-news{
+    max-width: 100%;
+}
+.home-slider-news .row ,.home-slider-news img{
+    box-shadow: 0px 0px 14.399999618530273px rgba(53, 54, 58, 0.40); 
+    border-radius: 7.20px;
+    background: #FCFCFC;
+
+}
+.swiper-slide{
+    max-width: 100%;
+}
+.swiper-wrapper{
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+
+}
+.swiper-container{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.home-cont-slider-news{
+    margin-top: -50px;
+    max-width: 100%;
+}
+.swiper-pagination {
+    position: relative !important; 
+    
+}
+
+.swiper-pagination-bullet {
+    background-color: #ccc; /* Default dot color */
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #00B7BF; /* Active dot color */
+    opacity: 1;
+}
+.text-news-title-home{
+    font-size: 21px;
+    color: #00B7BF;
+    font-weight: 700;
+    letter-spacing: 0.67px;
+    word-wrap: break-word;
+}
+.text-more{
+    font-size: 18px;
+}
+.home-cont-process .col-4{
+    margin-top: -90px;
+    width: 100%;    
+    height: 150px; 
+    background: #D9D9D9; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset; 
+    border-bottom-right-radius: 90px; 
+    border-top-right-radius: 90px;
+}
+.home-cont-process i{
+        display: inline-block; 
+        width: 70px; 
+        height: 70px; 
+        font-size: 64px;
+        line-height: 70px; 
+        text-align: center; 
+}
+.home-cont-process span{
+    color: #005498;
+    font-size: 26px;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 2.45px;
+    word-wrap: break-word;
+}
+.process-item-1{
+    position: relative;
+    z-index: 3;
+}
+.process-item-2{
+    position: relative; 
+    z-index: 2;
+    margin-left: -60px;
+}
+.process-item-3{
+    position: relative; 
+    z-index: 1; 
+    margin-left: -60px;
+}
+
+.text-view-more a{
+    color: #005498;
+    font-size: 30px;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 400;
+    text-decoration: underline;
+    letter-spacing: 1.20px;
+    word-wrap: break-word   
+}
 
 /* footer */
 
@@ -395,7 +539,7 @@
     list-style-type: none;
 }
 .footer-content{
-    display: flex;
+
     width: 80%;
     margin-left: 10%;
 }
@@ -460,7 +604,6 @@
 
 
 .about-cocq{
-    margin-top: 120px;
     width: 80%;
     margin-left: 10%;
 }
@@ -468,18 +611,15 @@
     display: flex;
     margin: -40px 30px;
     text-align: center;
-    align-items: center;    
-}
-
-
-.text-co{
+    align-items: center;   
     color: #00B7BF;
     font-size: 78px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    letter-spacing: 3.12px;
+    letter-spacing: 3.12px; 
 }
+
 .text-and{
     font-size: 120px;
     font-style: italic;  
@@ -490,20 +630,8 @@
     -webkit-text-stroke-width: 2px; 
     -webkit-text-stroke-color: #005498;
 }
-.content-cocq{
-    margin:100px 0;
-    display: flex;
-    justify-content: space-between; 
-    
-}
-.cont-co{
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
+
+
 .cont-co span{
     color: #005498;
     font-size: 24px;
@@ -549,7 +677,7 @@
 
 .pro-de-content{
     margin-bottom: 80px;
-    width: 90%;
+    width: 80%;
 }
 
 .pro-de-cont1{
@@ -563,16 +691,12 @@
     margin-bottom: 35px;
 }
 
-
-.pro-img{
-
-}
 .pro-info .row .col-6 .row-4{
     margin-bottom: 23px;
 }
 .pro-de-cont2{
-    display: flex; /* Kích hoạt Flexbox */
-    flex-direction: column; /* Sắp xếp theo chiều dọc */
+    display: flex; 
+    flex-direction: column;
     height: 100%; 
 }
 .pro-heading{
@@ -623,7 +747,6 @@
 .pro-warning {
     display: flex;
     align-items: center;
-    text-align: left;
     margin-left: auto; 
 }
 
@@ -695,29 +818,58 @@
     letter-spacing: 1.92px;
     word-wrap: break-word
 }
+.news-de-header h3 {
+    color: #005498;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1.92px;
+    word-wrap: break-word;
+}
+.text-view-all{
+    color: #FCFCFC;
+    text-decoration: underline;
+}
+.full-title {
+    display: inline;
+}
+.short-title {
+    display: none;
+}
+
+
+.text-info{
+    font-size: 18px;
+}
+
+
+
 .news-de-body{
     width: 80%;
-    margin-left: 10%;
-    align-items: center;
-   
+    margin-left: 10%;   
 }
-.text-news{
+.text-news-de{
     color: #1C1B1F;
     font-size: 20px;
-   
     font-weight: 400;
     letter-spacing: 0.80px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
+
 .news-de-daca {
+    
+    padding: 0 20px; 
+    margin-left: 10%;
+}
+.news-de-daca span {
+    white-space: nowrap;
     color: #00B7BF;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.72px;
     word-wrap: break-word;
-    padding: 0 20px; 
-    margin-left: 10%;
 }
+
 .news-de-body-header{
     color: #005498;
     font-size: 24px;
@@ -730,25 +882,287 @@
     width: 80%;
     margin-left: 10%;
 }
-.other-news-body .text-compaigns{
+.w-80-ml-10{
+    width: 80%;
+    margin-left: 10%;       
+}
+
+/* News detail */
+
+.text-compaigns-de{
     color: #00B7BF;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.45px;
     word-wrap: break-word
 }
-.text-news-title{
+.text-news-title-de{
     color: #005498;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.67px;
     word-wrap: break-word
 }
-.text-news-date{
+.text-news-date-de{
     color: #1C1B1F;
     font-size: 16px;
     font-family: Inter;
     font-weight: 400;
     letter-spacing: 0.16px;
     word-wrap: break-word
+}
+  /* Products */
+.title-pro-heading {
+     font-size: 20px;
+     font-weight: 700;
+     letter-spacing: 0.80px;
+     word-wrap: break-word
+}
+.container-img {
+    width: 100%;              
+    max-width: 800px;          
+    margin: 0 auto;                      
+    box-sizing: border-box;    
+    text-align: center;        
+}
+
+.container-img img {
+    width: 100%;               
+    height: auto;              
+         
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* news */
+.text-compaigns{
+    color: #00B7BF;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.45px;
+    word-wrap: break-word
+}
+.text-news-title{
+    color: #005498;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.67px;
+    word-wrap: break-word
+}
+.text-news-date{
+    color: #1C1B1F;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    letter-spacing: 0.16px;
+    word-wrap: break-word
+}
+.text-news-content{
+    color: #1C1B1F;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    letter-spacing: 0.80px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Contact */
+.contact-cont-1{
+    width: 100%;
+    height: 100%; 
+    background: #FCFCFC; 
+    box-shadow: 2px 2px 8px rgba(28, 27, 31, 0.40); 
+    border-radius: 8px;
+    padding: 30px;
+}
+.border-icon{
+    border-radius: 50%;
+    background-color: #005498;
+    width: 0.5rem;
+    height: 1rem;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .process-item-2{
+        margin-left: -20px;
+    }
+    .process-item-3{
+        margin-left: -20px;
+    }
+    .home-cont-process .col-4{
+        margin-top: -30px;
+        height: 55px;
+        width: 127px;
+    }
+    .home-cont-process i{
+        width: 15px;
+        height: 15px;
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .home-cont-process span{
+        font-size: 11px;
+        margin-left: 15px;
+        margin-top: -20px;
+        display: flex;
+    }
+    .text-view-more a{
+        font-size: 14px;
+    }
+    .home-heading-news{
+        height: 200px;
+        border-radius: 40px 0px;
+    }
+    .text-compaigns{
+        font-size: 8px !important;
+    }
+    .text-news-title-home{
+        font-size: 12px !important; 
+    }
+    .text-news-date{
+        font-size: 6px !important;
+    }
+    .text-more{
+        font-size: 8px !important;
+    }
+    .news-de-header h3 {
+        font-size: 32px;
+    }
+    .full-title {
+        display: none;
+    }
+    .short-title {
+        display: inline;
+    }
+    .news-de-daca .row span,a,input::placeholder, input{
+        font-size: 14px;
+    }
+    .news-de-daca .row{
+        flex-wrap: nowrap;
+        margin: 0 !important; 
+    }
+    .news-de-body-img{
+        height: 490px;
+    }
+    .text-compaigns{
+        margin-top: 20px;
+    }
+    .toggle-list {
+        display: none; 
+    }
+    .toggle-list {
+        display: none;
+    }
+    
+    .toggle-list.show {
+        display: block;
+    }
+    
+    .toggle-btn {
+        cursor: pointer;
+        font-size: 20px;
+        margin-left: 50%;
+    }
+    .text-our{
+        font-size: 38px;
+    }
+    .text-product{
+        font-size: 62px;
+    }
+    .text-about{
+        font-size: 44px;
+    }
+
+    .text-water{
+        font-size: 43px;
+    }
+    .text-tec{
+        font-size: 43px;
+    }
+    .container{
+        width: 100%;
+    }
+    .text-subtitle{
+        font-size: 9px;
+    }
+
+    .container-about-text {
+        font-size: 16px;
+    }
+   
+    .img-flag{
+        width: 57px;
+        height: 57px;    
+    }
+    .text-cocq{
+        font-size: 43px;
+        margin: -25px 20px;
+    }
+    .text-and{
+        font-size: 60px;
+    }
+    .about-cocq{
+        width: 100%;
+        margin: 0;
+        padding: 0 20px;
+    }
+    .footer-about-info-head p{
+        font-size: 16.5px;
+    }
+    .footer-about{
+        border-radius: 40px 0px;
+    }
+    .cont-co span{
+       
+        font-size: 18px;
+    }
+    .cont-co{
+        align-items: center;
+    }
+    .header-nav {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 15px; 
+    }
+    .news-de-daca{
+        min-width: 375px;
+        margin-left: 0 !important;
+        padding: 0 !important;
+    }
+    .text-info{
+        font-size: 14px;
+    }
+    .text-news-title{
+        font-size: 21px !important;
+    }
+    .text-news-compaigns{
+        font-size: 14.4px !important;
+    }
+    .text-news{
+        font-size: 44px;
+    }
+    .home-cont-text-news a{
+        font-size: 14px;
+    }
+    .text-latest{
+        font-size: 27px;
+    }
+    .text-our{
+        font-size: 44px;
+    }
+    .text-product{
+        font-size: 62px;
+    }
+    .text-pag {
+        font-size: 14px;
+    }
+}
+@media (max-width: 987px) {
+    .container-news-seekbar{
+        display: block;
+        justify-items: center;
+        margin: auto;
+    }
 }
